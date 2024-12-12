@@ -308,7 +308,7 @@
   padding: 0;
   margin: 100px 0 0;
   display: flex;
-  flex: wrap;
+  flex-wrap: wrap;
   column-gap: 40px;
   justify-content: center;
 }
@@ -335,26 +335,29 @@
 }
 .footer {
   display: flex;
-  padding: 60px 80px;
   box-sizing: border-box;
-  background-color: #000000;
+  color: #fff;
+  background-color: #1f1f1f;
+  padding: 60px 80px;
+  position: relative;
 }
 
 .footer__columns {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
 }
 
 .footer__column_content_hours {
   font-size: small;
   position: absolute;
-  right: 250px;
+  right: 300px;
   margin-left: auto;
 }
 
 .footer__column_content_social {
-  display: flex;
-  flex-direction: column;
+  font-size: small;
+  position: absolute;
+  right: 80px;
 }
 
 .footer__logo {
@@ -363,8 +366,6 @@
 }
 
 .footer__column-heading {
-  color: white;
-  display: block;
   margin-top: 0;
   margin-bottom: 20px;
 }
@@ -378,29 +379,27 @@
 .footer__list-item {
   display: flex;
   flex-wrap: wrap;
-  color: white;
-  padding: 0px 16px 0px 0px;
   gap: 10px;
+  padding: 0 16px 0 0;
 }
 
 .footer__column-link {
+  display: flex;
   color: white;
   text-decoration: none;
   column-gap: 10px;
-  display: flex;
   align-items: center;
 }
 
 .footer__social-icon {
-  font-size: samll;
-  margin-left: 80px;
-  height: 16px;
   width: 16px;
+  height: 16px;
+  padding-right: 10px;
+  padding-bottom: 0;
 }
 
 .footer__copyright {
-  margin-top: 100px;
-  margin-bottom: 0;
+  margin-top: 180px;
+  margin-left: -58px;
   font-size: small;
-  color: white;
 }
